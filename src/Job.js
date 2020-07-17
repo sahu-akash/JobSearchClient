@@ -3,11 +3,11 @@ import {Typography,Paper} from '@material-ui/core'
 
 
 
-export default function Job({job}){
+export default function Job({job,onClick}){
     
     
     return(
-        <Paper className="job">
+        <Paper onClick={onClick} className="job">
             <div><Typography variant='h6' >{job.title}</Typography>
             <Typography variant='h5'>{job.company}</Typography>
             <Typography>{job.location}</Typography>
